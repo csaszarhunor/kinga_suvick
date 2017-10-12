@@ -1,0 +1,50 @@
+a {
+    color: #666;
+}
+
+/* navbar */
+
+#phone-button {
+    font-size: 24px;
+    color: #666;
+}
+
+.navbar-nav>li>a {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.navbar {
+    min-height: 90px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-container {
+    padding: 20px 0 20px 0;
+}
+
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #fcfcfc;
+    border-color: #fcfcfc;
+    box-shadow: 0 0 3px rgba(150,150,150,.8);
+}
+
+.navbar-brand.fixed-theme {
+    font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+    transition: 0.8s;
+    -webkit-transition:  0.8s;
+}
