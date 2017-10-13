@@ -27,6 +27,14 @@ a:hover {
     color: #5ac2e2;
 }
 
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
 
 
 /*** background image ***/
@@ -185,7 +193,7 @@ a:hover {
 }
 
 .section-feature {
-    height: 400px;
+    min-height: 400px;
     margin-top: 40px;
     vertical-align: middle;
     line-height: 400px;
@@ -195,8 +203,19 @@ a:hover {
     max-height: 350px;
 }
 
-.section-feature > .col-sm-6 > h2 {
-    margin-top: 150px;
+@media only screen and (min-width: 768px) {
+    .section-feature > .col-sm-6 > h2 {
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section-feature > .col-sm-6 > h2 {
+        margin-bottom: 50px;
+    }
+    .section-feature > .col-sm-6 > img {
+        max-height: 300px;
+    }
 }
 
 .section-feature h2 {
