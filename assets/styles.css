@@ -1,8 +1,80 @@
+html, body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-family: 'Pacifico','Modak', cursive;
+    font-size: 4em;
+/*    color: #5ac2e2;*/
+    color: #666;
+}
+
+h2 {
+    font-family: "Roboto Slab", sans-serif;
+    color: #666;
+}
+
 a {
     color: #666;
 }
 
-/* navbar */
+a:hover {
+    color: #5ac2e2;
+}
+
+
+
+/*** background image ***/
+
+
+.overlay{
+  background-attachment:fixed;
+   background:url(img/bubbles.png);
+  -webkit-animation:100s scroll infinite linear;
+  -moz-animation:100s scroll infinite linear;
+  -o-animation:100s scroll infinite linear;
+  -ms-animation:100s scroll infinite linear;
+  animation:100s scroll infinite linear;
+  top:0;
+  left:0;
+  width:100%;
+ height:100%;
+}
+
+@-webkit-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-moz-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-o-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-ms-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+
+
+/*** navbar ***/
+
 
 #phone-button {
     font-size: 24px;
@@ -45,6 +117,14 @@ a {
 .navbar.navbar-fixed-top.fixed-theme,
 .navbar-brand,
 .navbar-container{
-    transition: 0.8s;
-    -webkit-transition:  0.8s;
+    transition: 0.4s;
+    -webkit-transition:  0.4s;
+}
+
+
+/*** ***/
+
+#header-intro {
+    margin: 100px auto;
+    padding-top: 100px;
 }
