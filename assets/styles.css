@@ -235,4 +235,63 @@ a:hover {
 
 footer {
     background-color: #666;
+    color: #f2f2f2;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer div a {
+    margin-top: 20px;
+    color: #f2f2f2;
+    padding: 5px;
+    text-decoration: none;
+}
+
+footer div a:hover {
+    background-color: #f2f2f2;
+    color: #5ac2e2;
+    text-decoration: none;
+}
+
+footer div p {
+    color: #b3b3b3;
+}
+
+#footer-content {
+    padding-top: 100px;
+}
+
+#copyright {
+    font-family: "Roboto Slab", serif;
+    color: #b3b3b3;
+    font-size: 12px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+#smudger-sponge-container {
+    position: relative; 
+    height: 156px;
+}
+
+#smudge {
+    position: absolute; 
+    width: 50%; 
+    height: 94px; 
+    background-color: white; 
+    right:0; 
+    top:41px;
+}
+
+#sponge_logo {
+    position: absolute; 
+    right: calc(50% - 48px);
+    top:40px;
+}
+
+#sponge_text {
+    position:absolute; 
+    right: calc(50% - 72px); 
+    top:156px;
 }
