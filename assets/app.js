@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function(){
 
 /**
@@ -75,4 +77,35 @@ window.onscroll = function(e) {
  * could be load with scroll down set.
  */
 offSetManager();
+});
+
+// Plugin @RokoCB :: Return the visible amount of px
+// of any element currently in viewport.
+// stackoverflow.com/questions/24768795/
+;(function($, win) {
+  $.fn.inViewport = function(cb) {
+     return this.each(function(i,el){
+       function visPx(){
+         var H = $(this).height(),
+             r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+         return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));  
+       } visPx();
+       $(win).on("resize scroll", visPx);
+     });
+  };
+}(jQuery, window));
+
+
+$(function(){
+    $(".transition-scale").inViewport(function(px){
+        if(px) $(this).addClass("triggeredCSS3") ;
+    });
+    
+    $(".transition-translateLeft").inViewport(function(px){
+        if(px) $(this).addClass("triggeredCSS3") ;
+    });
+    
+    $(".transition-translateRight").inViewport(function(px){
+        if(px) $(this).addClass("triggeredCSS3") ;
+    });
 });

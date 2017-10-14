@@ -295,3 +295,30 @@ footer div p {
     right: calc(50% - 72px); 
     top:156px;
 }
+
+
+/*** animations ***/
+
+
+.transition-scale {
+    transition: 1s;
+    transform: scale(0.6);
+}
+
+.transition-translateLeft {
+    transition: 1.5s;
+    transform : translate3d(-400px,0,0);
+}
+
+.transition-translateRight {
+    transition: 1.5s;
+    transform : translate3d(400px,0,0);
+}
+
+.scale.triggeredCSS3     {
+    transform : scale(1); 
+}
+
+.translate.triggeredCSS3 {
+    transform : translate3d(0,0,0); 
+}
