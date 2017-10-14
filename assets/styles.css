@@ -300,6 +300,7 @@ footer div p {
 /*** animations ***/
 
 
+@media only screen and (min-width: 768px) {
 .transition-scale {
     transition: 1s;
     transform: scale(0.6);
@@ -321,4 +322,5 @@ footer div p {
 
 .translate.triggeredCSS3 {
     transform : translate3d(0,0,0); 
+}
 }
